@@ -1,9 +1,7 @@
 import './bootstrap';
 
-import Alpine from 'alpinejs';
-import focus from '@alpinejs/focus';
-window.Alpine = Alpine;
+import {createApp} from 'vue'
 
-Alpine.plugin(focus);
+import App from './components/App.vue'
 
-Alpine.start();
+createApp(App).mount("#app")
